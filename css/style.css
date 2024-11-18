@@ -1,0 +1,130 @@
+body {
+  
+    background-color: #F7ECDE;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    position: relative;
+    display: inline-block;
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 60px;
+    color:#352e28;
+  }
+  h2{
+    margin-bottom: 30px;
+    font-family: "Righteous", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+    line-height: 30px;
+  font-style: normal;
+  color: #212529;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  
+  .title::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffa500;
+    z-index: -1;
+    transform: scaleY(0.3);
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+  }
+  #addBtn{
+    color: #fff;
+    background-color: #dd5a35;
+  }
+  #addBtn:hover{
+    color:white;
+    background-color: #BB4120;
+  }
+  .title:hover::before {
+    transform: scaleY(0.7);
+  }
+  .bookmark{
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+}
+
+  
+  input:focus {
+    outline: none !important;
+    border-color: #ffa500 !important;
+    box-shadow: 0 0 5px #ffa500;
+  }
+  
+  input.is-invalid {
+    border-color: red !important;
+    box-shadow: 0 0 5px red;
+  }
+  
+  input.is-valid {
+    border-color: green !important;
+    box-shadow: 0 0 5px green;
+  }
+  .circles .ch1{
+    background-color: #f15f5d;
+    margin-right: 10px;
+  }
+  .circles .ch2{
+    background-color: #febe2e;
+    margin-right: 10px;
+  }
+  .circles .ch3{
+    background-color: #4db748;
+    margin-right: 10px;
+  }
+  .circles span {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.rounded-circle {
+  border-radius: 50% !important;
+}
+p {
+  font-style: normal;
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.3;
+  color: #352e28;
+  text-align: left;
+  padding: 20px;
+}
+.modal-body{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color:#212529;
+
+}
+ul{
+  list-style-type: none;
+  text-align: left;
+  /* padding: 0; */
+}
+.modal-body span{
+  display: inline-flex;;
+  width:20px ;
+  height: 20px ;
+  border-radius: 50% !important;
+  border: #C65F43 1px solid;
+  text-align: center;
+  align-items: center;
+  margin-right: 5px;
+}
+.arrow{
+  color: #C65F43;
+}
